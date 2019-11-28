@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-static'
 import { breakpoint } from '../microsite-logic'
 import Carousel from 'react-bootstrap/Carousel'
 import background from './assets/subscribe-background.svg'

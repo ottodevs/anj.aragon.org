@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-function Head() {
+function AnjHead() {
   return (
     <Head>
       <title>Aragon Court</title>
@@ -34,4 +34,4 @@ function Head() {
   )
 }
 
-export default Head
+export default AnjHead

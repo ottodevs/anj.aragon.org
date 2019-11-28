@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Modal from 'react-bootstrap/Modal'
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
 import Button from 'react-bootstrap/Button'
-import { Link } from 'react-static'
 
 const MenuModal = () => {
   const [modalShow, setModal] = useState(false)

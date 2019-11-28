@@ -13,11 +13,11 @@ const About = () => (
         <img src={about1} />
         <div className="right">
           <h6>January 7th</h6>
-          <h2>Effective dispute resolution</h2>
+          <h2>ANJ pre-activation begins</h2>
           <h4>
-            The Aragon about encompasses a set of courts, which can be used to
-            settle disputes. By using smart contracts, cases can be closed way
-            faster than in traditional courts. Fairness for everyone.
+            During this period, all potential jurors will be able to get the
+            same amount of ANJ per ANT. When the court opens for disputes, ANJ
+            will only be available at a variable market rate.
           </h4>
         </div>
       </Container>
@@ -29,12 +29,10 @@ const About = () => (
         </Small>
         <div className="left">
           <h6>Early February</h6>
-          <h2>Anonymity and trust, together</h2>
+          <h2>First disputes begin</h2>
           <h4>
-            Mom probably advised you not to interact with strangers. But thanks
-            to the Aragon about, you can transact with people who are using
-            aliases, or stay anonymous yourself. You can open disputes if
-            someone misbehaves.
+            Jurors with at least 100 activated ANJ earn subscription fees as
+            they await being drafted onto juries to adjudicate disputes.
           </h4>
         </div>
         <Medium>
@@ -49,12 +47,13 @@ const AboutSection = styled.section`
   background: #f9fafc;
   padding: 0;
   text-align: center;
+  padding: 50px 15px 110px 15px;
 `
 
 const Section = styled.section`
   width: 80%;
   margin: auto;
-  padding: 0px 15px 80px 15px;
+  padding-bottom: 100px;
 `
 
 const Small = styled.div`
@@ -76,7 +75,7 @@ const Container = styled.div`
   justify-content: space-around;
   flex-direction: column;
   ${medium('flex-direction: row;')};
-  padding: 50px 0;
+  padding: 0;
   img {
     max-width: 70%;
     margin-bottom: 30px;

@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-static'
+import Fade from 'react-reveal/Fade'
 import { breakpoint } from '../microsite-logic'
 import background from './assets/hero-background.svg'
 
@@ -9,18 +11,25 @@ const large = css => breakpoint('large', css)
 const Hero = () => (
   <HeroSection>
     <TextContainer>
-      <h1>Become a Juror</h1>
-      <div className="h1-animated-box">
+      <Fade bottom duration={1200} delay={300}>
         <h1>
-          for <span className="pink">Aragon Court</span>
+          Become a Juror <span className="mobile">for</span>{' '}
         </h1>
-      </div>
-      <h2>
-        Aragon Court handles subjective disputes that require the judgement of
-        human jurors. These jurors stake a token called ANJ which allows them to
-        be drafted into juries and earn fees for successfully adjudicating
-        disputes.
-      </h2>
+        <div>
+          <h1>
+            <span className="medium">for</span>{' '}
+            <span className="pink">Aragon Court</span>
+          </h1>
+        </div>
+      </Fade>
+      <Fade bottom duration={1200} delay={600}>
+        <h2>
+          Aragon Court handles subjective disputes that require the judgment of
+          human jurors. These jurors stake a token called ANJ which allows them
+          to be drafted into juries and earn fees for successfully adjudicating
+          disputes.
+        </h2>
+      </Fade>
     </TextContainer>
   </HeroSection>
 )
@@ -36,7 +45,7 @@ const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
   padding-bottom: 0px;
-  min-height: 550px;
+  min-height: 600px;
   background-image: url(${background});
   background-position: 100% center;
   background-repeat: no-repeat;
@@ -46,11 +55,11 @@ const TextContainer = styled.div`
   width: 80%;
   margin: auto;
   padding-top: 40px;
-  ${medium('padding-top: 0;')};
+
   h1 {
     font-family: 'FontBold';
     font-weight: bold;
-    font-size: 54px;
+    font-size: 50px;
     line-height: 1;
     margin: 0;
     text-align: left;
@@ -59,10 +68,7 @@ const TextContainer = styled.div`
     ${medium('font-size: 76px;')};
     ${large('font-size: 86px;')};
   }
-  .h1-animted-box {
-    display: flex;
-    justify-content: flex-start;
-  }
+  ${medium('padding-top: 0;')};
   @keyframes shine {
     to {
       background-position: 200% center;
@@ -84,6 +90,8 @@ const TextContainer = styled.div`
     -webkit-text-fill-color: transparent;
 
     animation: shine 4s linear infinite;
+    display: block;
+    ${medium('display: inline;')};
   }
   h2 {
     font-family: 'FontRegular';
@@ -91,10 +99,18 @@ const TextContainer = styled.div`
     font-size: 20px;
     ${medium('font-size: 24px;')};
     line-height: 1.58;
-    display: flex;
-    align-items: left;
+    text-align: left
     color: white;
     max-width: 750px;
+    margin-top: 20px;
+  }
+  span.mobile {
+    display: inline;
+    ${medium('display: none;')};
+  }
+  span.medium {
+    display: none;
+    ${medium('display: inline;')};
   }
 `
 export default Hero

@@ -2,6 +2,15 @@
 <g filter="url(#filter0_d)">
 <rect x="17" y="14" width="748" height="511" rx="6" fill="white"/>
 </g>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="17" y="14" width="748" height="511">
+<rect x="17" y="14" width="748" height="511" rx="6" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<circle opacity="0.5" cx="391.5" cy="269.5" r="223.216" stroke="#FFA776" stroke-width="1.5"/>
+<circle opacity="0.3" cx="391.5" cy="269.5" r="255.045" stroke="#FFA776" stroke-width="1.5"/>
+<circle opacity="0.15" cx="391.5" cy="269.5" r="286.098" stroke="#FFA776" stroke-width="1.5"/>
+<circle opacity="0.1" cx="391.5" cy="269.5" r="317.75" stroke="#FFA776" stroke-width="1.5"/>
+</g>
 <path opacity="0.6" d="M328 269.5L331.75 264.737L331.75 274.263L328 269.5Z" fill="#7FDFA6"/>
 <path opacity="0.7" d="M320 269.5L323.75 264.737L323.75 274.263L320 269.5Z" fill="#7FDFA6"/>
 <path opacity="0.8" d="M312 269.5L315.75 264.737L315.75 274.263L312 269.5Z" fill="#7FDFA6"/>

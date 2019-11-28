@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import GetAnj from '../components/GetAnj'
 import Features from '../components/Features'
@@ -11,6 +12,7 @@ import Footer from '../components/Footer'
 
 export default () => (
   <div>
+    <Navbar />
     <Hero />
     <GetAnj />
     <Features />

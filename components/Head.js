@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-function IndexPage() {
+function Head() {
   return (
     <Head>
       <title>Aragon Court</title>
@@ -19,13 +19,13 @@ function IndexPage() {
       <meta name="twitter:site" content="@AragonProject" />
       <meta name="twitter:description" content="Become a juror for Aragon Court" />
       <meta name="twitter:title" content="Aragon Court" />
-      <meta name="twitter:image" content="https://raw.githubusercontent.com/aragon/jurors-microsite/master/public/twitter-card-icon.png" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/aragon/anj.aragon.org/master/public/twitter-card-icon.png" />
       <meta property="og:title" content="Aragon Court" />
       <meta property="og:description" content="Become a juror for Aragon Court" />
       <meta property="og:url" content="https://court.aragon.org/" />
       <meta property="og:site_name" content="Aragon Court" />
-      <meta property="og:image" content="https://raw.githubusercontent.com/aragon/jurors-microsite/master/public/twitter-card-icon.png" />
-      <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/aragon/jurors-microsite/master/public/twitter-card-icon.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/aragon/anj.aragon.org/master/public/twitter-card-icon.png" />
+      <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/aragon/anj.aragon.org/master/public/twitter-card-icon.png" />
       <meta property="og:image:width" content="300" />
       <meta property="og:image:height" content="300" />
 
@@ -34,4 +34,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default Head
